@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 60px;
+            width: 800px;
+            margin: auto;
+        }
+
+        .first {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            background: red;
+            float: left;
+        }
+
+        .second {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            background: blue;
+            float: left;
+        }
+
+        .third {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            background: black;
+            float: left;
+        }
+
+        .fourth {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            background: orange;
+            float: left;
+        }
+
+        /* 窗口大小在1200px以上 */
+        @media screen and(min-width: 1200px) {
+            .container {
+                width: 800px;
+            }
+
+            .first {
+                width: 200px;
+                float: left;
+            }
+
+            .second {
+                width: 200px;
+                float: left;
+            }
+
+            .third {
+                width: 200px;
+                float: left;
+            }
+
+            .fourth {
+                width: 200px;
+                float: left;
+            }
+        }
+
+        /* 屏幕宽度大于992px小于1200px时 */
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            .container {
+                width: 540px;
+            }
+
+            .first {
+                width: 540px;
+                float: none;
+            }
+
+            .second {
+                width: 180px;
+                float: left;
+            }
+
+            .third {
+                width: 180px;
+                float: left;
+            }
+
+            .fourth {
+                width: 180px;
+                float: left;
+            }
+        }
+
+        /* 当屏幕宽度大于768px小于992px时 */
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .container {
+                width: 440px;
+            }
+
+            .first {
+                width: 220px;
+                float: left;
+            }
+
+            .second {
+                width: 220px;
+                float: left;
+            }
+
+            .third {
+                width: 220px;
+                float: right;
+            }
+
+            .fourth {
+                width: 220px;
+                float: right;
+            }
+        }
+
+        /* 当屏幕宽度小于768px时 */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 400px;
+            }
+
+            .first {
+                width: 400px;
+            }
+
+            .second {
+                width: 400px;
+            }
+
+            .third {
+                width: 400px;
+            }
+
+            .fourth {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+    </div>
+</body>
+
+</html>
